@@ -1,10 +1,20 @@
 !!! 5
 %html
   %head
-    %title= yield(:title)
+    %title= full_title(yield(:title))
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
 
   %body
-    = yield
+    %header.navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          = link_to "sample app", "#", id: "logo"
+          %nav
+            %ul.nav.pull-right
+              %li= link_to "Home",    "#"
+              %li= link_to "Help",    "#"
+              %li= link_to "Sign in", "#"
+    .container
+      = yield
