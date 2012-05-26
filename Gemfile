@@ -29,7 +29,6 @@ group :test do
   gem 'capybara'
   gem 'rb-fchange'
   gem 'rb-notifu'
-  gem 'win32console'
   gem 'guard-spork'
   gem 'spork'
 end
