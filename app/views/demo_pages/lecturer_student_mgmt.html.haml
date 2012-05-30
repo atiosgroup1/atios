@@ -1,0 +1,35 @@
+.page-header
+  %h1 Lecturer Demo page
+%p This is a lecturer page. Here the lecturer can add students to different courses
+
+=render 'layouts/add_form'
+%a.btn.pull-right.btn-primary{"data-toggle" => "modal", :href => "#myModal"}
+  %i.icon-user
+  Add a student
+%table.table.table-condensed
+  %thead
+    %tr
+      %th= "Name"
+      %th= "Course"
+      %th
+      %th
+
+  %tbody
+    - @students.each do |student|
+      %tr
+        %td= student
+        %td
+          Advanced topics in operation systems
+        %td
+          %a.btn.btn-small{:href => "#", :rel => "popover"}
+            %i.icon-cog
+            See exercises
+        %td
+          %a.btn.btn-danger{:href => "#"}
+            %i.icon-trash.icon-white
+            Delete
+
+
+%a.btn.pull-right.btn-primary{"data-toggle" => "modal", :href => "#myModal"}
+  %i.icon-user
+  Add a student

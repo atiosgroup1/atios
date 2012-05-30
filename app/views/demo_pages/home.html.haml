@@ -1,0 +1,26 @@
+.page-header
+  %h1 Welcome to Advanced Operating Systems course site
+
+.row
+  .offset3.span6
+
+    %form.form-horizontal
+      %fieldset
+        .control-group
+          %label.control-label Username
+          .controls
+            %input.input-xlarge{type: "text"}
+        .control-group
+          %label.control-label Password
+          .controls
+            %input.input-xlarge{type: "password"}
+
+        .form-actions
+          %button.btn.btn-primary Sign in
+          %button.btn Clean
+
+
+    %p
+      New user? #{link_to "Sign up now!", "#"}
+    %p
+      Forgot password? #{link_to "Click to remeber!", "#"}

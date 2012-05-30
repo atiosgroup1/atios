@@ -1,0 +1,42 @@
+.page-header
+  %h1 Lecturer Demo page
+%p This is a lecturer page. Here the lecturer can manage all exercises
+= render 'layouts/add_exercise'
+%a.pull-right.btn.btn-primary{"data-toggle" => "modal", :href => "#addExerciseModal"}
+  Add new exercise
+%table.table.table-condensed
+  %thead
+    %tr
+      %th= "Title"
+      %th= "Description"
+      %th= "Course"
+      %th= "Script"
+      %th= #Delete button
+      %th= #Save edit button
+  %tbody
+    - for i in 1..14 do
+
+      %tr
+        %td= "Exercise " + i.to_s
+        %td#exercise_desc= random_lorem(40)
+        %td= "Our course"
+        %td
+          -if [true, false].sample
+            %a.btn{:href => "#"}
+              %i.icon-trash.icon-white
+              Upload script
+          -else
+            =link_to "View script", "#"
+        %td
+          %td
+            %a.btn.btn-danger{:href => "#"}
+              %i.icon-trash.icon-white
+              Delete
+        %td
+          %td
+            %a.btn.btn-warning{:href => "#"}
+              %i.icon-file.icon-white
+              Edit/Save
+
+%a.pull-right.btn.btn-primary{"data-toggle" => "modal", :href => "#addExerciseModal"}
+  Add new exercise

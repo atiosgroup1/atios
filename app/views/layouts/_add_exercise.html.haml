@@ -1,0 +1,27 @@
+#addExerciseModal.modal.hide.fade{:style => "display: none; "}
+  .modal-header
+    %button.close{"data-dismiss" => "modal"} ×
+    %h3= "Add new Exercise"
+  .modal-body
+    %form.form-horizontal
+      %fieldset
+        .control-group
+          %label.control-label Title
+          .controls
+            %input.input-xlarge{type: "text"}
+        .control-group
+          %label.control-label{:for => "textarea"} Description
+          .controls
+            %textarea#textarea.input-xlarge{:rows => "3"}
+
+        .control-group
+          %label.control-label{:for => "fileInput"} Additional files
+          .controls
+            %input#fileInput.input-file{:type => "file"}
+        .control-group
+          %label.control-label{:for => "fileInput"} Check script
+          .controls
+            %input#fileInput.input-file{:type => "file"}
+  .modal-footer
+    %a.btn{"data-dismiss" => "modal", :href => "#"} Close
+    %a.btn.btn-primary{:href => "#"} Save changes

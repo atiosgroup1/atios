@@ -1,0 +1,26 @@
+#myModal.modal.hide.fade{:style => "display: none; "}
+  .modal-header
+    %button.close{"data-dismiss" => "modal"} ×
+    %h3= "Add new #{@to_add}"
+  .modal-body
+    %form.form-horizontal
+      %fieldset
+        .control-group
+          %label.control-label ID
+          .controls
+            %input.input-xlarge{type: "text"}
+        .control-group
+          %label.control-label Name
+          .controls
+            %input.input-xlarge{type: "text"}
+        .control-group
+          %label.control-label E-mail
+          .controls
+            %input.input-xlarge{type: "text"}
+        .control-group
+          %label.control-label First time password
+          .controls
+            %input.input-xlarge{type: "password"}
+  .modal-footer
+    %a.btn{"data-dismiss" => "modal", :href => "#"} Close
+    %a.btn.btn-primary{:href => "#"} Save changes

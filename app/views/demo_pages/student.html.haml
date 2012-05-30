@@ -1,0 +1,30 @@
+.page-header
+  %h1 Student Demo page
+%p This is a student page. Here student can submit exercises
+%table.table.table-bordered
+  %thead
+    %tr
+      %th= "Name"
+      %th= "Submit"
+      %th= "Automatic grade"
+      %th= "Lector grade"
+      %th= "Last date"
+      %th= "Description"
+  %tbody
+    - @exercises.each do |exercise|
+      %tr{id: exercise[4]}
+        %td= exercise[0]
+        -if exercise[4]
+          %td
+            Submitted
+        -else
+          %td
+            %button.btn
+              Submit
+        %td= exercise[1]
+        %td= exercise[2]
+        %td= exercise[3].to_formatted_s(:short)
+        %td
+          %a{:href => "#"}
+            Details
+

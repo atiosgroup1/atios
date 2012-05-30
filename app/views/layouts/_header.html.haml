@@ -1,0 +1,33 @@
+%header.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      = link_to "Submission system", "#", id: "logo"
+      %nav
+        %ul.nav.nav-pills
+          %li= link_to "Home",    root_path
+          %li= link_to "Student",    student_path
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Lecturer
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "#{lecturer_student_mgmt_path}"} Student Management
+              %li
+                %a{:href => "#{lecturer_exercise_mgmt_path}"} Exercise Management
+          %li= link_to "Admin", admin_path
+      -if @user == ""
+        .btn-group.pull-right
+          %button.btn Sign in
+      -else
+        .btn-group.pull-right
+          %a.btn.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %i.icon-user
+            =@user
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} Profile
+            %li.divider
+            %li
+              %a{:href => "#"} Sign Out
