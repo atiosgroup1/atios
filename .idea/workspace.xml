@@ -2,63 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0c6eff2-8b19-4bfa-bf1f-d1eb148af36c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/annotate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/autospec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/erubis" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/guard" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/html2haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/htmldiff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/ldiff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/lorem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/nokogiri" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/rackup" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/rake2thor" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/rdoc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/ri" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/rspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/sass-convert" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/thor" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/tilt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/tt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/users.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/users.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/users_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/demo_pages/lecturer_exercise_mgmt.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_add_exercise.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_add_form.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_shim.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/contact.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/new.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/rails" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/rake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/spork" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20120528185813_create_users.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20120528192641_add_index_to_users_email.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20120528193446_add_password_digest_to_users.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/requests/user_pages_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/utilities.rb" />
-      <change type="DELETED" beforePath="C:\Users\vmakarov\RubymineProjects\atios\public\index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/atios.iml" afterPath="$PROJECT_DIR$/.idea/atios.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.haml" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/static_pages_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/static_pages_spec.rb" />
     </list>
     <ignored path="atios.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -159,19 +104,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/demo_pages/admin.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="21" selection-start="211" selection-end="211" vertical-scroll-proportion="0.25925925">
+            <state line="7" column="21" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="60" column="11" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.7777778">
               <folding />
             </state>
           </provider>
@@ -195,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
         <option value="$PROJECT_DIR$/app/views/demo_pages/home.html.haml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -211,6 +155,7 @@
         <option value="$PROJECT_DIR$/app/views/demo_pages/lecturer_exercise_mgmt.html.haml" />
         <option value="$PROJECT_DIR$/app/views/demo_pages/lecturer_student_mgmt.html.haml" />
         <option value="$PROJECT_DIR$/app/views/demo_pages/admin.html.haml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -951,13 +896,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/demo_pages.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1062,7 +1000,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/demo_pages/admin.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="21" selection-start="211" selection-end="211" vertical-scroll-proportion="0.25925925">
+        <state line="7" column="21" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="11" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.7777778">
           <folding />
         </state>
       </provider>

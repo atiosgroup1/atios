@@ -23,7 +23,7 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
-  gem 'faker'
+
   gem 'annotate'
 end
 
@@ -58,3 +58,4 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'faker'
