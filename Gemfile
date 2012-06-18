@@ -26,6 +26,7 @@ group :development, :test do
   gem 'annotate'
   gem 'cucumber'
   gem 'cucumber-rails-training-wheels'
+  gem 'annotate'
 end
 
 group :test do
