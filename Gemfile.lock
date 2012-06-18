@@ -49,6 +49,18 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.1)
+    cucumber (1.1.9)
+      builder (>= 2.1.2)
+      diff-lcs (>= 1.1.2)
+      gherkin (~> 2.9.0)
+      json (>= 1.4.6)
+      term-ansicolor (>= 1.0.6)
+    cucumber-rails (1.3.0)
+      capybara (>= 1.1.2)
+      cucumber (>= 1.1.8)
+      nokogiri (>= 1.5.0)
+    cucumber-rails-training-wheels (1.0.0)
+      cucumber-rails (>= 1.1.1)
     diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.3.1)
@@ -56,6 +68,8 @@ GEM
     faker (1.0.1)
       i18n (~> 0.4)
     ffi (1.0.11)
+    gherkin (2.9.3-x86-mingw32)
+      json (>= 1.4.6)
     guard (1.0.2)
       ffi (>= 0.5.0)
       thor (~> 0.14.6)
@@ -145,6 +159,7 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.6-x86-mingw32)
+    term-ansicolor (1.0.7)
     thor (0.14.6)
     tilt (1.3.3)
     treetop (1.4.10)
@@ -166,6 +181,8 @@ DEPENDENCIES
   bootstrap-sass
   capybara
   coffee-rails (~> 3.2.1)
+  cucumber
+  cucumber-rails-training-wheels
   faker
   guard-rspec
   guard-spork
@@ -180,4 +197,5 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   spork
   sqlite3
+  therubyracer
   uglifier (>= 1.0.3)

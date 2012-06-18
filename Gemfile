@@ -15,16 +15,17 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platform => :ruby
-  gem 'therubyracer' 
+  gem 'therubyracer', :platform => :ruby
+  # gem 'therubyracer'
   gem 'uglifier', '>= 1.0.3'
 end
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
-
   gem 'annotate'
+  gem 'cucumber'
+  gem 'cucumber-rails-training-wheels'
 end
 
 group :test do
