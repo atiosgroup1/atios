@@ -23,10 +23,9 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
-  gem 'annotate'
   gem 'cucumber'
   gem 'cucumber-rails-training-wheels'
-  gem 'annotate'
+  gem 'annotate', '2.4.1.beta1'
 end
 
 group :test do
@@ -61,3 +60,5 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'faker'
+gem "canard", '0.3.6'
+gem 'cancan'
