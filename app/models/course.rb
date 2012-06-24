@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: courses
+#
+#  id          :integer         not null, primary key
+#  name        :string(255)
+#  lecturer_id :integer
+#  created_at  :datetime        not null
+#  updated_at  :datetime        not null
+#
+
 class Course < ActiveRecord::Base
   attr_accessible :lecturer_id, :name
   belongs_to :lecturer
@@ -9,3 +20,4 @@ class Course < ActiveRecord::Base
     course_enrollments.create!(student_id: student.id)
   end
 end
+
