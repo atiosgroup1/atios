@@ -5,7 +5,7 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 
 
 # Gems used only for assets and not required
@@ -27,6 +27,7 @@ group :development, :test do
   gem 'cucumber-rails-training-wheels'
   gem 'annotate', ">=2.5.0.pre1"
   #gem 'ruby-debug-ide'
+  gem 'sqlite3'
 end
 
 group :test do
