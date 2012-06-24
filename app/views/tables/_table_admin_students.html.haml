@@ -1,0 +1,23 @@
+%table.table
+  %thead
+    %tr
+      %th User name
+      %th Email
+      %th Courses
+      %th
+  %tbody
+    - @students.each do |student|
+      %tr
+        %td= link_to student.user_name, student_path(student)
+        %td= mail_to student.email,  student.email
+        %td
+          -if student.courses.empty?
+            No courses
+          -else
+            - student.courses.each do |course|
+              = link_to course.name, course_path(course)
+        %td
+          %a.btn.btn-danger{:href => "#"}
+            %i.icon-trash.icon-white
+            Delete
+

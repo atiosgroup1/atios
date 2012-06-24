@@ -1,0 +1,11 @@
+%ul.nav.pull-right
+  - if signed_in?
+    %li
+      .navbar-text
+        = "Welcome, #{current_user.user_name}"
+    %li.divider-vertical
+    %li
+      = link_to "Logout", logout_path
+  -else
+    %li
+      = link_to "Login", login_path

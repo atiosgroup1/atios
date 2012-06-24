@@ -1,0 +1,8 @@
+- if current_user.is_admin?
+  = render 'layouts/nav_admin_links'
+
+- if current_user.is_lecturer?
+  = render 'layouts/nav_lecturer_links'
+
+- if current_user.is_student?
+  =render 'layouts/nav_student_links'

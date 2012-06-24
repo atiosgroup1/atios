@@ -1,7 +1,7 @@
 class DemoPagesController < ApplicationController
   def home
     @user = ""
-    user = User.create(:user_name=>"vssfaa", :password=>"123123", :password_confirmation=>"123123", :role=>:admin, :email=>"aaaa@aaaa.com")
+    user = User.first
 
   end
 

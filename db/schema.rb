@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120620190531) do
+ActiveRecord::Schema.define(:version => 20120624162542) do
 
   create_table "course_enrollments", :force => true do |t|
     t.integer  "course_id"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20120620190531) do
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
     t.string   "password_digest"
+    t.string   "remember_token"
   end
 
 end

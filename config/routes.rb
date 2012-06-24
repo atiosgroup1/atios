@@ -1,4 +1,8 @@
 Atios::Application.routes.draw do
+  get "courses/new"
+
+  get "courses/show"
+
  # get "demo_pages/home"
 
   #get "demo_pages/student"
@@ -9,13 +13,23 @@ Atios::Application.routes.draw do
 
  # get "users/new"
 
-  root to: 'demo_pages#home'
-  match '/admin', to: 'demo_pages#admin'
+  root to: 'static_pages#home'
+ # match '/admin', to: 'demo_pages#admin'
   match '/lecturer', to: 'demo_pages#lecturer'
   match '/lecturer_student_mgmt', to: 'demo_pages#lecturer_student_mgmt'
   match '/lecturer_exercise_mgmt', to: 'demo_pages#lecturer_exercise_mgmt'
   match '/lecturer_add_student', to: 'demo_pages#lecturer_add_student'
   match '/student', to: 'demo_pages#student'
+
+  resources :sessions, only: [:new, :create, :destroy]
+  resources :users
+  resources :admins
+  resources :students
+  resources :lecturers
+  resources :courses
+
+  match '/login', to: 'sessions#new'
+  match '/logout', to: 'sessions#destroy'
 
  # root to: 'static_pages#home'
 

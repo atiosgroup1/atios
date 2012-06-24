@@ -22,11 +22,20 @@ class User < ActiveRecord::Base
   validates :type, presence:true, allow_nil: false
   validates :email,presence: true
 
+  before_save { |user| user.user_name.downcase!}
+  before_save :create_remember_token
+
+
   def method_missing(m, *args, &block)
     if m.to_s =~ /^is_(.+)\?$/  #like is_student?
       self.type.downcase==$1.downcase
     else
       super
     end
+  end
+
+  private
+  def create_remember_token
+     self.remember_token = SecureRandom.urlsafe_base64
   end
 end

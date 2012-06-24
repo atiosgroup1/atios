@@ -1,0 +1,19 @@
+%table.table
+  %thead
+    %tr
+      %th Course name
+      %th Lecturer
+      %th Students
+      %th
+  %tbody
+    - @courses.each do |course|
+      %tr
+        %td= link_to course.name, course_path(course)
+        %td= link_to course.lecturer.user_name, lecturer_path(course.lecturer)
+        %td
+          Students
+        %td
+          %a.btn.btn-danger{:href => "#"}
+            %i.icon-trash.icon-white
+            Delete
+

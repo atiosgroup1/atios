@@ -1,0 +1,10 @@
+.row
+  .span6.offset3
+    = form_for(:session, url: sessions_path) do |f|
+      = f.label :user_name
+      = f.text_field :user_name
+      = f.label :password
+      = f.password_field :password
+      = f.submit "Sign in", class: "btn btn-large btn-primary"
+    %p
+      New user? #{link_to "Sign up now!", "#"}
