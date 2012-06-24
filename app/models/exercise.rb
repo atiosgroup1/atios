@@ -18,5 +18,5 @@ class Exercise < ActiveRecord::Base
   belongs_to :course
 
   has_many :exercise_submissions
-  has_many :students, through: :exercise_submissions
+  has_many :students, :through => :exercise_submissions
 end
