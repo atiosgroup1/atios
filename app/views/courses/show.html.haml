@@ -1,2 +1,29 @@
-%h1 Courses#show
-%p Find me in app/views/courses/show.html.haml
+.row
+  .span4
+    %p
+      Course exercises
+    -if current_user.is_lecturer?
+      %a.btn.pull-left.btn-primary{:href => new_exercise_path(:course_id => @course.id)}
+        Add an exercise
+
+  .span8
+    %table.table
+      %thead
+        %tr
+          %th Exercise title
+          %th Due date
+          %th Ex file
+          %th Script
+          %th
+      %tbody
+        - @exercises.each do |exr|
+          %tr
+            %td= link_to exr.title, exercise_path(exr)
+            %td= exr.due_date
+            %td
+              %a{:href=>"/#{exr.exercise_path}"} Files
+            %td
+              %a{:href=>"/#{exr.script_path}"} Script
+
+            %td= link_to "Delete", exercise_path(exr), :method => :delete, :confirm => 'Are you sure?'
+

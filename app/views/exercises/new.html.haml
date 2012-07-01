@@ -1,0 +1,22 @@
+%h1 Exercises#new
+%p= @exercise.inspect
+
+= form_for(@exercise) do |f|
+  =f.label :title
+  =f.text_field :title
+
+  =f.label :description
+  =f.text_area :description
+
+  =f.label :due_date
+  =f.date_select :due_date
+
+  =f.label :exercise_path
+  =f.file_field :exercise_path
+
+  =f.label :script_path
+  =f.file_field :script_path
+
+  = f.hidden_field :course_id
+
+  =f.submit "Create"

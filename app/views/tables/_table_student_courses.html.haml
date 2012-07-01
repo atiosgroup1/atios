@@ -1,0 +1,20 @@
+%table.table
+  %thead
+    %tr
+      %th Course name
+      %th Lecturer
+      %th Exercises
+  %tbody
+    - @courses.each do |course|
+      %tr
+        %td= link_to course.name, course_path(course)
+        %td= link_to course.lecturer.user_name, lecturer_path(course.lecturer)
+        %td
+          -if course.exercises.empty?
+            No exercises
+          -else
+
+            - course.exercises.each do |exercise|
+              = link_to exercise.title, exercise_path(exercise)
+              %br
+

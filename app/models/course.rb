@@ -17,7 +17,7 @@ class Course < ActiveRecord::Base
   has_many :course_enrollments
 
   def enroll! (student)
-    course_enrollments.create!(student_id: student.id)
+    course_enrollments.create!(student_id: student.id) unless student.enrolled?(self)
   end
 end
 

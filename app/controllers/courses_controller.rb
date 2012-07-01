@@ -10,7 +10,18 @@ class CoursesController < ApplicationController
   end
 
   def show
+    @course = Course.find_by_id(params[:id])
+    @exercises = @course.exercises unless @course.nil?
   end
+
+  def index
+    if current_user.is_admin?
+      redirect_to admin_path
+    else
+      @courses = current_user.courses
+    end
+  end
+
   def create
     #TODO: check permissions
     # course = Course.create!(name: params[:name], )
@@ -23,5 +34,21 @@ class CoursesController < ApplicationController
     else
       render 'new'
     end
+  end
+
+  def enroll
+    @student = current_user if current_user.is_student?
+    @course = Course.find_by_id(params[:id])
+    if @course.enroll! @student
+      #go to success
+      flash[:success] = "Successfully enrolled to course '#{@course.name}'"
+      redirect_to course_path @course
+    else
+      #goto to other path
+      flash[:error] = "Failed to enroll to course '#{@course.name}'"
+      redirect_to courses_path
+    end
+
+
   end
 end
