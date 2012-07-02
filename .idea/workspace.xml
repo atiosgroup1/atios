@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0c6eff2-8b19-4bfa-bf1f-d1eb148af36c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/exercises_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/exercises_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_nav_lecturer_links.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_nav_lecturer_links.html.haml" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\25a26916-2875-40cf-a672-ffe3fc7ace8b\exercise_wer340184af-45ba-4dd2-809e-292e09ea8a15poignant-guide.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\25a26916-2875-40cf-a672-ffe3fc7ace8b\script_were2d00ae7-f334-4ce8-a2eb-4b8ff67221c5poignant-guide.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\2e4454d0-50fc-4bc5-9224-00257bc26dea\exercise_sdfc5a1490d-f23d-4439-b158-6f90cf5c71e9DLL.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\2e4454d0-50fc-4bc5-9224-00257bc26dea\script_sdffb54fd13-c3a6-49ca-9284-4aa58e6f083dDLL.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\5b392280-966f-4a03-b7c5-57ba3c1f20ae\exercise_sdf92e28a78-585b-4251-b9b1-39df2d62bfcfDLL.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\5b392280-966f-4a03-b7c5-57ba3c1f20ae\script_sdf2100f6ea-e367-4ee4-8f24-0973a40687f9DLL.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\8499ed02-0106-46a8-860c-1705b68176d0\exercise_Exercise 1acf47c21-c7a6-485f-8704-c56acd22a750poignant-guide.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\8499ed02-0106-46a8-860c-1705b68176d0\script_Exercise 13377c1d9-3100-4d80-a3d2-d7cd26ae25b3poignant-guide.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\9d851900-44d5-4be6-9625-16fcc6793d49\exercise_wer628a20eb-e0e2-40a1-8856-3af9e651ae26poignant-guide.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\9d851900-44d5-4be6-9625-16fcc6793d49\script_were8ef97c9-883b-4728-a9ec-dec3999532a5poignant-guide.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\b25221f7-27d5-42b7-91e6-a40044bc5325\exercise_Exercise 1fc9450fd-eee1-4ed9-8ee6-a5c2f188656dpoignant-guide.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\b25221f7-27d5-42b7-91e6-a40044bc5325\script_Exercise 118a1594a-a86b-46d2-8f96-f66bb9bb00d9poignant-guide.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\d3653dc6-131e-4f71-9371-5182f1273bf3\exercise_Exercise 1de50d9af-bd77-42bd-9aea-be896a81fa58poignant-guide.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\d3653dc6-131e-4f71-9371-5182f1273bf3\script_Exercise 1a807ea41-bc84-494a-bd06-ecabf1ed6fecpoignant-guide.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\ed180c29-4d73-4a63-a82a-5a57833345e1\exercise_sdffd42fa55-afa4-4523-beda-1a8db56d6f7eDLL.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\ed180c29-4d73-4a63-a82a-5a57833345e1\script_sdf9bf0f41e-aaf1-4a0d-a619-f0239bb1ff13DLL.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\fe6bfdc5-386f-44cb-9df7-9a56a0f8da07\exercise_77b6a5f0-debc-492d-99f0-ad097c11970fDLL.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vmakarov\Documents\Study\Saas\workspace\atios\public\files\fe6bfdc5-386f-44cb-9df7-9a56a0f8da07\script_d609a9f2-606e-4be5-8b88-27eec8e4a4a4DLL.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="atios.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +57,7 @@
       <file leaf-file-name="add_default_users.rake" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/add_default_users.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="14" selection-start="131" selection-end="131" vertical-scroll-proportion="0.10967742">
+            <state line="13" column="16" selection-start="299" selection-end="299" vertical-scroll-proportion="0.48043478">
               <folding />
             </state>
           </provider>
@@ -102,15 +119,6 @@
       </file>
       <file leaf-file-name="demo_pages_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/demo_pages_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course_enrollment.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/course_enrollment.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -245,43 +253,93 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -808,17 +866,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.47940797" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292011" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27710843" sideWeight="0.38679245" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1891892" sideWeight="0.68733156" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1891892" sideWeight="0.680593" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39892185" sideWeight="0.46653795" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25289574" sideWeight="0.17520216" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31266847" sideWeight="0.07979408" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31266847" sideWeight="0.9157014" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31940702" sideWeight="0.07979408" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31940702" sideWeight="0.9157014" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.48970398" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -888,11 +946,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/course.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tables/_table_lecturer_courses.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="34" selection-start="0" selection-end="506" vertical-scroll-proportion="-13.076923" />
@@ -985,9 +1038,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.25345623">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/add_default_users.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="14" selection-start="131" selection-end="131" vertical-scroll-proportion="0.10967742">
+        <state line="13" column="16" selection-start="299" selection-end="299" vertical-scroll-proportion="0.48043478">
           <folding />
         </state>
       </provider>
