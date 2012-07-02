@@ -9,6 +9,7 @@ class ExercisesController < ApplicationController
 
   def create
     @course = Course.find_by_id(params[:exercise][:course_id])
+    Dir.mkdir("public/data")
     @directory = "public/data/"+SecureRandom.uuid
     Dir.mkdir(@directory)
     @exercise_file_name = File.join(@directory, "exercise_" + params[:exercise][:title] +SecureRandom.uuid + params[:exercise][:exercise_path].original_filename)
