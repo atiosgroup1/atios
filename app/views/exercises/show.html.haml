@@ -1,2 +1,42 @@
-%h1 Exercises#show
-%p Find me in app/views/exercises/show.html.haml
+%h1= "Exercise '#{@exercise.title}' (id: #{@exercise.id}) in course #{@exercise.course.name}"
+%table.table#exercise_show_table
+  %tbody
+    %tr
+      %td#title
+        Title
+      %td= @exercise.title
+
+    %tr
+      %td#title
+        Description
+      %td= @exercise.description
+
+    %tr
+      %td#title
+        Due date
+      %td= @exercise.due_date
+
+    %tr
+      %td#title
+        Exercise File
+      -if !@exercise.exercise_path.nil?
+        %td= link_to "Link", "/#{@exercise.exercise_path}"
+      -else
+        %td
+          N/a
+    %tr
+      %td#title
+        Exercise Script
+      -if !@exercise.script_path.nil?
+        %td= link_to "Link", "/#{@exercise.script_path}"
+      -else
+        %td
+          N/a
+
+
+
+
+-if current_user.is_lecturer?
+  =render 'exercise_show_lecturer'
+-elsif current_user.is_student?
+  =render 'exercise_show_student'

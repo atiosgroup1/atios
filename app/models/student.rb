@@ -26,6 +26,7 @@ class Student < User
   def submit!(exercise, arguments = {})
     args = {student_id: :id, exercise_id: exercise.id }
     args.merge! arguments unless arguments.empty?
+    args[:exercise_submission_datetime]=DateTime.now
     exercise_submissions.create!(args)
   end
 end

@@ -1,22 +1,41 @@
-%h1 Exercises#new
-%p= @exercise.inspect
+%form.form-horizontal.new_exercise#new_exercise{action:"/exercises", method:"post",:enctype=>"multipart/form-data"}
 
-= form_for(@exercise) do |f|
-  =f.label :title
-  =f.text_field :title
+  %input#exercise_course_id{type:"hidden",name:"exercise[course_id]",value:"#{@course.id}"}
 
-  =f.label :description
-  =f.text_area :description
+  %fieldset
+    -# Title
+    .control-group
+      %label.control-label{:for => "exercise_title"} Title
+      .controls
+        %input#exercise_title.input-xlarge{:type => "text", name:"exercise[title]"}
 
-  =f.label :due_date
-  =f.date_select :due_date
+    -# Description
+    .control-group
+      %label.control-label{:for => "exercise_description"} Description
+      .controls
+        %textarea#exercise_description.input-xlarge{:rows =>10,name:"exercise[description]"}
 
-  =f.label :exercise_path
-  =f.file_field :exercise_path
+    -# Due date
+    .control-group
+      %label.control-label{:for => "exercise_due_date"} Due date
+      .controls
+        %input#exercise_due_date#datepicker{type:"text", name:"exercise[due_date]"}
 
-  =f.label :script_path
-  =f.file_field :script_path
+    -# Exercise path
+    .control-group
+      %label.control-label{:for => "exercise_exercise_path"} Exercise file
+      .controls
+        %input#exercise_exercise_path{type:"file", name:"exercise[exercise_path]"}
 
-  = f.hidden_field :course_id
+    -# Script  path
+    .control-group
+      %label.control-label{:for => "exercise_script_path"} Script file
+      .controls
+        %input#exercise_script_path{type:"file", name:"exercise[script_path]"}
 
-  =f.submit "Create"
+    -#Create button
+    .form-actions
+      %input.btn.btn-primary{type: "submit", name:"commit", value:"Create"}
+
+
+

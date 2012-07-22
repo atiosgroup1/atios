@@ -4,8 +4,18 @@
     %title= full_title(yield(:title))
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"
+    = stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css"
+
     = csrf_meta_tags
     = render 'layouts/shim'
+    %script
+      :plain
+        $(document).ready(function() {
+            $("#datepicker").datepicker();
+          });
+
   %body
     = render 'layouts/header'
     .container
@@ -15,3 +25,5 @@
       = render 'layouts/footer'
       = debug(params) if Rails.env.development?
       = debug(current_user) if Rails.env.development?
+
+
