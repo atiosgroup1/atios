@@ -1,0 +1,15 @@
+%section#courses
+  .page-header
+    %h1
+      Courses
+  .row
+    .span4
+      %p
+        Here you can manage courses
+    .span8
+      - if @courses.empty?
+        No courses
+      - if current_user.is_student?
+        =render 'tables/table_student_courses'
+      -if current_user.is_lecturer?
+        =render 'tables/table_lecturer_courses'

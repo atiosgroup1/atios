@@ -24,7 +24,7 @@
             %td= lecturer[1]
             %td= lecturer[2]
             %td
-              %a.btn.btn-danger{"data-toggle" => "modal", :href => "#myModal"}
+              %a.btn.btn-danger{:href => "#"}
                 %i.icon-trash.icon-white
                 Delete
             %td

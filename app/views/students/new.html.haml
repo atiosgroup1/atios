@@ -1,0 +1,18 @@
+= form_for(@student) do |s|
+  =s.label :name
+  =s.text_field :user_name
+  
+  =s.label :email
+  =s.text_field :email
+  
+  =s.label :password
+  =s.password_field :password 
+  =label_tag 'Select Courses for Student'
+  - @course.each do |courses| 
+    =check_box_tag "#{courses.id}"
+    =h "#{courses.name}"
+    %br
+  =s.submit "Create"
+ 
+ 
+ 

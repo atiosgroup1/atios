@@ -3,7 +3,7 @@ class StudentsController < UsersController
  
  def new
   @student = User.students.new
-  @course = Course.all
+  
   session[:user] = "students"
   
  end

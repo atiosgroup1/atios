@@ -7,5 +7,4 @@ class AdminsController < UsersController
     @courses.inspect
     render 'users/admin'
   end
-  
 end
