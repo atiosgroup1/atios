@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120624162542) do
+ActiveRecord::Schema.define(:version => 20120722164410) do
 
   create_table "course_enrollments", :force => true do |t|
     t.integer  "course_id"
@@ -33,10 +33,12 @@ ActiveRecord::Schema.define(:version => 20120624162542) do
     t.text     "student_comment"
     t.integer  "auto_grade"
     t.integer  "final_grade"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
     t.integer  "student_id"
     t.integer  "exercise_id"
+    t.string   "exercise_submission_path"
+    t.datetime "exercise_submission_datetime"
   end
 
   create_table "exercises", :force => true do |t|

@@ -10,12 +10,12 @@ class UsersController < ApplicationController
     end
      end
   end
-
+  
   def index
      redirect_to user_path current_user
   end
   
-   def create
+  def create
     
     if session[:user].to_s.eql?("lecturers")
       @user = User.lecturers
@@ -45,3 +45,4 @@ class UsersController < ApplicationController
     session[:user] = nil
   end
 end
+

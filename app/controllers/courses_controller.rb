@@ -11,6 +11,7 @@ class CoursesController < ApplicationController
 
   def show
     @course = Course.find_by_id(params[:id])
+
     @exercises = @course.exercises unless @course.nil?
   end
 

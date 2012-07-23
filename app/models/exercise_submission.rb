@@ -16,7 +16,7 @@
 
 class ExerciseSubmission < ActiveRecord::Base
   attr_accessible :exercise_id, :student_id
-  attr_accessible :auto_grade, :final_grade, :lecturer_comment, :lecturer_grade, :student_comment
+  attr_accessible :auto_grade, :final_grade, :lecturer_comment, :lecturer_grade, :student_comment, :exercise_submission_path, :exercise_submission_datetime
 
   belongs_to :student, :class_name => "Student"
   belongs_to :exercise, :class_name => "Exercise"

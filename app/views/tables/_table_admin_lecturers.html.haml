@@ -14,12 +14,12 @@
           -if lecturer.courses.empty?
             No courses
           -else
+
             - lecturer.courses.each do |course|
               = link_to course.name, course_path(course)
               %br
         %td
-          %a.btn.btn-danger{:href => "#"} 
+          %a.btn.btn-danger{:href => "#"}
             %i.icon-trash.icon-white
-            Delete 
-            
+            Delete
 

@@ -6,6 +6,7 @@ class AdminsController < UsersController
     @courses = Course.all
     @courses.inspect
     render 'users/admin'
+
+
   end
-  
 end
