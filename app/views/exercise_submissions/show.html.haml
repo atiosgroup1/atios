@@ -1,0 +1,20 @@
+.row
+  .span4
+    %p
+      Exercise:
+      =link_to(@submission.exercise.title, exercise_path(@submission.exercise_id))
+    %p
+      Course:
+      =link_to @submission.exercise.course.name, course_path(@submission.exercise.course_id)
+
+    -if current_user.is_lecturer?
+      %p
+        Submitted by:
+        =link_to @submission.student.user_name, student_path(@submission.student_id)
+
+  .span8
+
+    -if current_user.is_student?
+      =render 'exercise_submission_show_student'
+    -if current_user.is_lecturer?
+      =render 'exercise_submission_show_lecturer'

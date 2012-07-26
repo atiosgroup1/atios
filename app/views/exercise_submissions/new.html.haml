@@ -1,0 +1,21 @@
+%form.form-horizontal.new_exercise#new_exercise_submissions{action:"/exercise_submissions", method:"post",:enctype=>"multipart/form-data"}
+
+  %input#exercise_submission_exercise_id{type:"hidden",name:"exercise_submission[exercise_id]",value:"#{params[:exercise_id]}"}
+
+  %fieldset
+    -# Students comments
+    .control-group
+      %label.control-label{:for => "student_comments"} Comments
+      .controls
+        %textarea#student_comments.input-xlarge{:rows =>10,name:"exercise_submission[student_comments]"}
+
+
+    -# Exercise path
+    .control-group
+      %label.control-label{:for => "exercise_submission_path"} Exercise file
+      .controls
+        %input#exercise_submission_path{type:"file", name:"exercise_submission[exercise_submission_path]"}
+
+    -#Create button
+    .form-actions
+      %input.btn.btn-primary{type: "submit", name:"commit", value:"Create"}

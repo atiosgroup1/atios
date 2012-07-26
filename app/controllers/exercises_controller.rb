@@ -6,6 +6,9 @@ class ExercisesController < ApplicationController
 
   def show
     @exercise = Exercise.find(params[:id])
+    if current_user.is_student?
+      @student_submissions = @exercise.exercise_submissions.find_all_by_student_id(current_user.id)
+    end
   end
 
   def create
@@ -58,4 +61,6 @@ class ExercisesController < ApplicationController
     end
     redirect_to course_path @course
   end
+
+
 end

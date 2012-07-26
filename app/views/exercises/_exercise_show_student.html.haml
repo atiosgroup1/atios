@@ -1,1 +1,26 @@
 %h1 My submissions
+-if @student_submissions.nil?
+  %p No submissions
+-else
+  %table.table
+    %thead
+      %tr
+        %th Date
+        %th Automation Grade
+        %th Lecturer Grade
+        %th
+    %tbody
+      -@student_submissions.each do |submission|
+        %tr
+          %td=submission.exercise_submission_datetime
+          %td
+            -if submission.auto_grade
+              =submission.auto_grade
+            -else
+              ="N/a"
+          %td
+            -if submission.lecturer_grade
+              =submission.lecturer_grade
+            -else
+              ="N/a"
+          %td=link_to "Link", exercise_submission_path(submission.id)

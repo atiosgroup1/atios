@@ -18,7 +18,10 @@
       %tbody
         - @exercises.each do |exr|
           %tr
-            %td= link_to exr.title, exercise_path(exr)
+            -if current_user.is_student?
+              %td= link_to exr.title, exercise_path(exr)
+            -if current_user.is_lecturer?
+              %td= link_to "#{exr.title} (#{exr.exercise_submissions.count})", exercise_path(exr)
             %td= exr.due_date
             %td
               -if (exr.exercise_path.nil?)
@@ -31,5 +34,12 @@
               -else
                 %a{:href=>"/#{exr.script_path}"} Script
 
-            %td= link_to "Delete", exercise_path(exr), :method => :delete, :confirm => 'Are you sure?'
+            %td
+              -if current_user.is_lecturer?
+                = link_to "Delete", exercise_path(exr), :method => :delete, :confirm => 'Are you sure?'
+              -if current_user.is_student?
+                -if exr.due_date && DateTime.now > exr.due_date
+                  %i= "Submisison date passed"
+                -else
+                  = link_to "Submit", new_exercise_submission_path(:exercise_id=>exr.id)
 

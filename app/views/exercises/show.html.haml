@@ -33,7 +33,12 @@
         %td
           N/a
 
-
+-if current_user.is_student?
+  -if DateTime.now > @exercise.due_date
+    %i
+      You cannot submit. Submission date ended.
+  -else
+    =link_to "Submit", new_exercise_submission_path(:exercise_id=>@exercise.id)
 
 
 -if current_user.is_lecturer?

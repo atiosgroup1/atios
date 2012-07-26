@@ -1,0 +1,48 @@
+-# Table name: exercise_submissions
+-#  id               :integer         not null, primary key
+-#  lecturer_grade   :integer
+-#  lecturer_comment :text
+-#  student_comment  :text
+-#  auto_grade       :integer
+-#  final_grade      :integer
+-#  created_at       :datetime        not null
+-#  updated_at       :datetime        not null
+-#  student_id       :integer
+-#  exercise_id      :integer
+%form.form-horizontal.update_exercise_submission#update_exercise_submissions{action:"/exercise_submissions/#{@submission.id}", method:"post",:enctype=>"multipart/form-data"}
+  %table.table.table-bordered
+    %tr
+      %th
+        Student comment
+      %td= @submission.student_comment
+    %tr
+      %th
+        Submitted files
+      %td
+        - if @submission.exercise_submission_path
+          = link_to "Download", "/#{@submission.exercise_submission_path}"
+    %tr
+      %th
+        Comments
+      %td
+        %textarea#lecturer_comment.input-xxlarge{:rows =>15,name:"exercise_submission[lecturer_comment]"}
+          =@submission.lecturer_comment
+    %tr
+      %th
+        Auto grade
+      %td
+        %input#auto_grade.input-mini{:type => "text", name:"exercise_submission[auto_grade]", value: @submission.auto_grade}
+    %tr
+      %th
+        Final grade
+      %td
+        %input#final_grade.input-mini{:type => "text", name:"exercise_submission[lecturer_grade]", value: @submission.lecturer_grade}
+          %span.help-inline
+            %i
+              Once you put grade, it will be upgraded for all submissions for that student
+
+
+  %input.btn.btn-primary{type: "submit", name:"commit", value:"Save"}
+
+  %input{name:"_method", type:"hidden", value:"put"}
+

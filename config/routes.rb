@@ -1,34 +1,13 @@
 Atios::Application.routes.draw do
   get "exercises/new"
-
   get "exercises/show"
-
   get "exercises/create"
-
   get "courses/new"
-
   get "courses/show"
-
   get "public/files"
-
- # get "demo_pages/home"
-
-  #get "demo_pages/student"
-
- # get "demo_pages/lecturer"
-
- # get "demo_pages/admin"
-
- # get "users/new"
 
 
   root to: 'static_pages#home'
- # match '/admin', to: 'demo_pages#admin'
- # match '/lecturer', to: 'demo_pages#lecturer'
-  match '/lecturer_student_mgmt', to: 'demo_pages#lecturer_student_mgmt'
-  match '/lecturer_exercise_mgmt', to: 'demo_pages#lecturer_exercise_mgmt'
-  match '/lecturer_add_student', to: 'demo_pages#lecturer_add_student'
-  #match '/student', to: 'demo_pages#student'
 
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
@@ -37,11 +16,14 @@ Atios::Application.routes.draw do
   resources :lecturers
   resources :courses
   resources :exercises
-
+  resources :exercise_submissions
   match '/login', to: 'sessions#new'
   match '/logout', to: 'sessions#destroy'
   match 'courses/:id/enroll'=>'courses#enroll', :as=>:enroll
- # root to: 'static_pages#home'
+  match 'exercises/:id/submit' => 'exercises#submit', :as => :submit
+  #match 'exercises/:id/submission/:exercise_submission_id' => 'exercise_submissions#show',:as=>:exercise_submission
+ # post 'exercise_submissions/:id' =>"exercise_submissions#update"
+  # root to: 'static_pages#home'
 
  # match '/signup',  to: 'users#new'
  # match '/help',    to: 'static_pages#help'

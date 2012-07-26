@@ -3,11 +3,11 @@
   %thead
     %tr
       %th Date
-    %tr
       %th Student
+      %th
   %tbody
     -@exercise.exercise_submissions.each do |submission|
       %tr
         %td=submission.exercise_submission_datetime
-      %tr
         %td=submission.student.user_name
+        %td=link_to "Link", exercise_submission_path(submission.id)

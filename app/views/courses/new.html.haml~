@@ -1,8 +1,0 @@
-= form_for(@course) do |f|
-  =f.label :name
-  =f.text_field :name
-
-  =f.label :lecturer
-  =f.select :lecturer_id, @lecturers.map {|lecturer| [lecturer.user_name, lecturer.id]}
-  
-  =f.submit "Create"
