@@ -44,9 +44,11 @@ class ExerciseSubmissionsController  < ApplicationController
     if !grade.empty?
       ExerciseSubmission.update_all("lecturer_grade=#{grade}",
                                     "student_id=#{@submission.student_id} AND exercise_id=#{@submission.exercise_id}")
+
+
     end
 
-    redirect_to exercise_submission_path params[:id]
+    redirect_to exercise_path @submission.exercise_id
 end
 
 
